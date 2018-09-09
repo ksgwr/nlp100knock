@@ -24,7 +24,7 @@ func TestNgramSlice(t *testing.T) {
 
 	expected := []string{"I/am", "am/an", "an/NLPer"}
 
-	if (!reflect.DeepEqual(actual, expected)) {
+	if !reflect.DeepEqual(actual, expected) {
 		t.Errorf("got = %v, want = %v", actual, expected)
 	}
 }
